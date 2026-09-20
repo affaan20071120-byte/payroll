@@ -84,6 +84,18 @@ export function Login({ onLogin }: LoginProps) {
               Authenticating...
             </div>
           )}
+          
+          {/* Public privacy policy link */}
+<div className="text-center text-sm text-cyan-300">
+  <a
+    href={`${import.meta.env.BASE_URL}privacy.html`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:text-white transition-colors"
+  >
+    Privacy Policy
+  </a>
+</div>
 
         </motion.div>
       </div>
